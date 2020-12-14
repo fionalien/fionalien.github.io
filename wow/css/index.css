@@ -1,0 +1,874 @@
+body {
+    background-color: #0a0b0c;
+    background-image: url(../img/bk.png);
+    background-position: center -35px;
+}
+
+@media (min-width: 996px) {
+    body {
+        background-image: url(../img/bk_pc.png);
+        background-position: center -70px;
+    }
+}
+
+
+/* sec1 */
+
+#sec1 {
+    position: relative;
+    top: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 72px;
+}
+
+@media (min-width: 996px) {
+    #sec1 {
+        top: 144px;
+        padding-bottom: 144px;
+    }
+}
+
+#sec1 .container {
+    height: 100%;
+    padding-top: 10em;
+}
+
+@media (min-width: 996px) {
+    #sec1 .container {
+        padding-top: 18em;
+    }
+}
+
+#sec1 h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+@media (min-width: 996px) {
+    #sec1 h2 {
+        font-size: 60px;
+    }
+}
+
+#sec1 h2 span {
+    padding: 5px 10px;
+    background-color: rgba(0, 112, 162, .6);
+    animation: mymove 4s infinite;
+    animation-iteration-count: 3
+}
+
+@keyframes mymove {
+    from {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    to {
+        background-color: rgba(0, 112, 162, .6);
+    }
+}
+
+#sec1 h3 {
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+@media (min-width: 996px) {
+    #sec1 h3 {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 150px;
+    }
+}
+
+#sec1 h3 span {
+    color: #2a2a2a;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    animation: mymove2 4s infinite;
+    animation-iteration-count: 3
+}
+
+@keyframes mymove2 {
+    from {
+        background-color: rgba(0, 112, 162, .6);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.ttlWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 995px) {
+    .ttlWrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 6em;
+        align-items: center;
+    }
+}
+
+.btn-down {
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    margin-left: -25px;
+}
+
+@media (min-width: 1025px) {
+    .btn-down {
+        margin-left: -50px;
+    }
+}
+
+.btn-down i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 17px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/chevron-down.png);
+}
+
+@media (min-width: 1025px) {
+    .btn-down i {
+        width: 101px;
+        height: 35px;
+    }
+}
+
+
+/* sec2 */
+
+#sec2 {
+    margin: 3em 0 5em 0;
+}
+
+@media (min-width: 1200px) {
+    #sec2 {
+        margin: 6em 0 10em 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    #sec2 {
+        padding: 1.5em 0;
+    }
+}
+
+@media (max-width: 995px) {
+    #sec2 .boxWrap>div {
+        margin: 1.5em auto 0 auto;
+    }
+}
+
+@media (min-width: 996px) {
+    #sec2 .boxWrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        /*height: 430px;
+        overflow: hidden;*/
+    }
+    #sec2 .boxWrap>div {
+        width: 49%;
+    }
+}
+
+#sec2 .slick-list {
+    padding: 1em 0 0 0;
+}
+
+@media (min-width: 400px) {
+    #sec2 .slick-list {
+        padding: .85em 0 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #sec2 .slick-list {
+        padding: .5em 0 0 0;
+    }
+}
+
+#sec2 .slick-slider {
+    height: 260px;
+    overflow: hidden;
+    margin-top: -.5em;
+}
+
+@media (min-width: 768px) {
+    #sec2 .slick-slider {
+        margin-top: -.5em;
+    }
+}
+
+@media (min-width: 1680px) {
+    #sec2 .slick-slider {
+        height: 410px;
+    }
+}
+
+.newsItem {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    height: 70px;
+    margin: 0 0 1em 0;
+}
+
+@media (min-width: 768px) {
+    .newsItem {
+        height: 80px;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .newsItem {
+        height: 80px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .newsItem {
+        font-size: 90% !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .newsItem {
+        height: 110px;
+        margin: 0 0 1em 0;
+    }
+}
+
+@media (min-width: 1680px) {
+    .newsItem {
+        height: 120px;
+    }
+}
+
+.newsItem .newsImg {
+    width: 125px;
+    height: 70px;
+}
+
+@media (min-width: 768px) {
+    .newsItem .newsImg {
+        width: 143px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .newsItem .newsImg {
+        width: 143px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .newsItem .newsImg {
+        width: 196px;
+        height: 110px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .newsItem .newsImg {
+        width: 214px;
+        height: 120px;
+    }
+}
+
+.newsItem .newsImg a {
+    width: 100%;
+    height: 100%;
+}
+
+.newsItem .newsImg img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsItem .newsInfo {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: calc(100% - 139px);
+    margin: .5em .5em 0 .5em;
+}
+
+@media (min-width: 768px) {
+    .newsItem .newsInfo {
+        max-width: calc(100% - 184px);
+        margin: .5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .newsItem .newsInfo {
+        max-width: calc(100% - 170px);
+    }
+}
+
+@media (min-width: 1500px) {
+    .newsItem .newsInfo {
+        max-width: calc(100% - 211px);
+    }
+}
+
+@media (min-width: 1680px) {
+    .newsItem .newsInfo {
+        max-width: calc(100% - 229px);
+    }
+}
+
+@media (min-width: 1500px) {
+    .newsItem .newsInfo {
+        flex: 1;
+        margin: 0 13px;
+    }
+}
+
+.newsItem .newsInfo .h4 {
+    margin-bottom: .25em;
+}
+
+@media (min-width: 1025px) {
+    .newsItem .newsInfo .h4 {
+        margin-bottom: 1em;
+    }
+}
+
+.newsItem .newsInfo .h4 a {}
+
+.newsItem .newsInfo .h4 a {
+    color: #0070a2;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .newsItem .newsInfo .h4 a {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.newsItem .newsInfo .newsDesc {
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.newsItem .newsInfo .newsDate {
+    position: absolute;
+    right: 0;
+    top: -.5em;
+    background-color: #0070a2;
+    padding: 2px 5px;
+    color: white;
+    font-size: 12px;
+}
+
+@media (min-width: 1025px) {
+    .newsItem .newsInfo .newsDate {
+        right: 1em;
+        top: -.5em;
+        padding: 5px 10px;
+    }
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 1023px) {
+    .carousel-nav {
+        margin-top: 1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-nav {
+        justify-content: flex-end;
+    }
+}
+
+.carousel-nav button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+.carousel-nav i,
+.icon-prev,
+.icon-next {
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-nav .nav-prev {
+    margin-right: 1em;
+}
+
+.icon-prev,
+.carousel-nav .nav-prev>i {
+    background-image: url(../img/slide_up.png);
+}
+
+.carousel-nav .nav-prev.disabled>i {
+    background-image: url(../img/slide_up_disabled.png);
+}
+
+.icon-next,
+.carousel-nav .nav-next>i {
+    background-image: url(../img/slide_down.png);
+}
+
+.carousel-nav .nav-next.disabled>i {
+    background-image: url(../img/slide_down_disabled.png);
+}
+
+
+/* #sec3 */
+
+#sec3 {
+    display: block;
+    background-image: url(../img/bk_tire.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: calc(100vh + 2em);
+}
+
+@media (min-width: 400px) {
+    #sec3 .container {
+        min-height: calc(100vh + 60px);
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec3 .container {
+        min-height: calc(100vh + 120px);
+    }
+}
+
+@media (min-width: 1680px) {
+    #sec3 .container {
+        min-height: calc(100vh + 200px);
+    }
+}
+
+@media (min-width: 996px) {
+    #sec3 {
+        background-image: url(../img/bk_tire_pc.png);
+        background-size: cover;
+    }
+}
+
+#sec3 .container {
+    position: relative;
+    display: block;
+    min-height: 100vh;
+    padding: 1em .5em;
+}
+
+@media (min-width: 400px) {
+    #sec3 .container {
+        padding: 30px 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec3 .container {
+        padding: 80px 0;
+    }
+}
+
+#sec3 #tireShow {
+    position: absolute;
+    top: 50%;
+    left: -57%;
+    margin-top: -200px;
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    #sec3 #tireShow {
+        width: 800px;
+        height: 800px;
+        margin-top: -400px;
+    }
+}
+
+@media (min-width: 996px) {
+    #sec3 #tireShow {
+        left: -40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec3 #tireShow {
+        left: 10%;
+    }
+}
+
+@media (min-width: 1500px) {
+    #sec3 #tireShow {
+        left: 15%;
+    }
+}
+
+#sec3 #tireShow img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1199px) {
+    #sec3 #tireShow img {
+        transform: matrix(0.87, 0.50, -0.50, 0.87, 0, 0);
+        -ms-transform: matrix(0.87, 0.50, -0.50, 0.87, 0, 0);
+        -webkit-transform: matrix(0.87, 0.50, -0.50, 0.87, 0, 0);
+    }
+}
+
+#sec3 #tirePanel {
+    position: absolute;
+    right: 1.5em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (min-width: 400px) {
+    #sec3 #tirePanel {
+        right: 2em;
+    }
+}
+
+@media (max-width: 995px) {
+    #sec3 #tirePanel {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #sec3 #tirePanel {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 996px) {
+    #sec3 #tirePanel {
+        right: 110px;
+        width: 335px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #sec3 #tirePanel {
+        right: 220px;
+    }
+}
+
+#sec3 #tirePanel h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 1200px) {
+    #sec3 #tirePanel h2 {
+        font-size: 48px;
+    }
+}
+
+#sec3 #tirePanel h3 {
+    text-align: center;
+    color: #0070a2;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 5px 10px;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1200px) {
+    #sec3 #tirePanel h3 {
+        font-size: 20px;
+    }
+}
+
+#sec3 #tirePanel ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#sec3 #tirePanel ul li {
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+#sec3 #tirePanel ul li.active::after {
+    content: "";
+    position: absolute;
+    right: -110px;
+    width: 110px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+@media (min-width: 1500px) {
+    #sec3 #tirePanel ul li.active::after {
+        right: -220px;
+        width: 220px;
+    }
+}
+
+#sec3 #tirePanel ul li small {
+    font-size: 10px;
+    font-style: italic;
+    margin-top: .5em;
+}
+
+@media (max-width: 1199px) {
+    #sec3 #tirePanel ul li span,
+    #sec3 #tirePanel ul li small {
+        padding-right: 1em;
+    }
+}
+
+@media (max-width: 399px) {
+    #sec3 #tirePanel ul li span,
+    #sec3 #tirePanel ul li small {
+        padding-right: .5em;
+    }
+}
+
+
+/* #sec4 */
+
+#sec4 {
+    display: block;
+    width: 100vw;
+    background-color: white;
+    background-image: url(../img/bk_sec4_mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 995px) {
+    #sec4 {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 500px) {
+    #sec4 {
+        background-position-y: 100%;
+    }
+}
+
+@media (max-width: 375px) and (min-height: 812px) {
+    #sec4 {
+        background-position-y: 12%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 995px) {
+    #sec4 {
+        background-size: 50%;
+        background-position-x: center;
+    }
+}
+
+@media (min-width: 996px) {
+    #sec4 {
+        background-image: url(../img/bk_sec4.png);
+        background-position: 100px center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec4 {
+        background-position: 50px center;
+    }
+}
+
+#sec4 .container {
+    padding: 0 2em;
+}
+
+@media (min-width: 375px) {
+    #sec4 .container {
+        padding: 2em 3em;
+    }
+}
+
+@media (min-width: 996px) {
+    #sec4 .container {
+        padding: 6em 3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec4 .container {
+        padding: 4em 6em;
+    }
+}
+
+@media (min-width: 1400px) {
+    #sec4 .container {
+        padding: 4em 6em 6em 6em;
+    }
+}
+
+@media (min-width: 1500px) {
+    #sec4 .container {
+        padding: 4em 6em 9em 6em;
+    }
+}
+
+#sec4 h2 {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 1200px) {
+    #sec4 h2 {
+        font-size: 48px;
+    }
+}
+
+#sec4 h3 {
+    margin-bottom: 1em;
+}
+
+#sec4 h3 span {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 112, 162, .8);
+    padding: 5px 10px;
+}
+
+@media (min-width: 1200px) {
+    #sec4 h3 span {
+        font-size: 20px;
+    }
+}
+
+#sec4 p {
+    line-height: 2
+}
+
+.btn-cta {
+    display: block;
+    color: #0070a2;
+    border: .5px solid #0070a2;
+    padding: .5em 1em;
+    margin: .5em auto;
+    cursor: pointer;
+}
+
+.btn-cta a {
+    color: #0070a2;
+    padding: .5em 1em;
+}
+
+@media (min-width: 375px) {
+    .btn-cta {
+        margin: 1em auto;
+    }
+}
+
+@media (min-width: 400px) {
+    .btn-cta {
+        margin: 1.5em auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #sec4 .boxWrap>div {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 996px) {
+    #sec4 .boxWrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        /*height: 430px;
+        overflow: hidden;*/
+    }
+    #sec4 .boxWrap>div {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec4 .boxWrap {
+        height: 460px;
+    }
+}
+
+#sec4 .boxWrap .boxLeft {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 996px) {
+    #sec4 .boxWrap .boxLeft {
+        width: 100%;
+    }
+}
